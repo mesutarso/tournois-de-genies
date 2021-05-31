@@ -1,0 +1,9 @@
+.navbar-brand{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.navbar-brand > h2{
+    text-align: center !important;
+    padding: 30px !important;
+}
