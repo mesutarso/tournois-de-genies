@@ -52,7 +52,7 @@
             <div class="card-body">
                <h5 class="card-title">Exercice 4.1</h5>
                <p class="card-text">LA BOUCLE FOR, WHILE, FOREACH</p>
-              <a href="./exercices/exercice3/loop.php" class="btn btn-primary">Voir la Solution</a>
+              <a href="./exercices/exercice4/loop.php" class="btn btn-primary">Voir la Solution</a>
               </div>
        </div>
       </div>
