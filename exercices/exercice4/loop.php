@@ -16,20 +16,47 @@
             </a>
         </nav>
     </header>
-    <main class='d-flex justify-content-center'>
+    <main class='d-flex justify-content-center py-5'>
     <div class="row">
         <div class="col-4">
         <h4>Boucler avec la boucler for</h4>
         <?php 
-             $arrayName = array();
+             $days = array("Lundi","Mardi","Mercredi","jeudi", "vendredi");
+            $sizeofArray = count($days);
+             echo "il y a ".count($days)." élements";
+             for($i=0; $i < $sizeofArray; $i++){
+                 echo "<li>$days[$i]</li>";
+             }
         
         ?>
         </div>
         <div class="col-4">
         <h4>Boucler avec la boucler While</h4>
+        <?php 
+             $days = array("Lundi","Mardi","Mercredi","jeudi", "vendredi");
+            $sizeofArray = count($days);
+             echo "il y a ".count($days)." élements";
+             $i=0;
+             while($i < $sizeofArray){
+                echo "<li>$days[$i]</li>";
+                $i++;
+             }
+            
+        
+        ?>
         </div>
         <div class="col-4">
         <h4>Boucler avec la boucler ForEach</h4>
+        <?php 
+             $days = array("Lundi","Mardi","Mercredi","jeudi", "vendredi");
+            
+             echo "il y a ".count($days)." élements";
+            foreach($days as $day){
+                echo "<li>$day</li>";
+            }
+            
+        
+        ?>
         </div>
     
     </div>
