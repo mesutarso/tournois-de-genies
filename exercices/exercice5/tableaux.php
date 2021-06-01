@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <title>for loop</title>
+    <title>Les tableaux</title>
 </head>
 <body class="p-5 d-flex flex-column align-items-center">
-   <h1 class="text-dark text-center pb-5">Table de multiplication de 8</h1> 
+   <h1 class="text-dark text-center pb-5">Table de noms</h1> 
    <table class="table table-bordered border-dark ">
     <thead>
         <tr>
-            <th>Opérations</th>
-            <th>Résultat</th>
+            <th>N°</th>
+            <th>Noms</th>
         </tr>
     </thead>
     <tbody>
     <?php
-        $nombre = 8;
-    for($i = 0; $i <= 10; $i++){
-        $result = $i*$nombre;
-        echo "<tr><td>$i * $nombre </td><td>$result </td></tr>";    
+        $noms = array("durant","martin", "li","wang","fu");
+        $sizeofArray = count($noms);
+    for($i = 1; $i <= $sizeofArray; $i++){
+        $k = $i-1;
+        echo "<tr><td>$i</td><td>".$noms[$i-1]. " </td></tr>";    
     }
     
     ?>

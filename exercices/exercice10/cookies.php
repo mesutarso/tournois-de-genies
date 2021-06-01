@@ -1,0 +1,5 @@
+<?php 
+
+$actualites = array()
+
+?>
